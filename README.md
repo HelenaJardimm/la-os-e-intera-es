@@ -21,3 +21,25 @@ HTML
 - Ao clicar no botão "Quantos foram selecionados?", um alerta é exibido mostrando quantas opções foram selecionadas.
  
 Esse código combina HTML para a estrutura da página, CSS (referenciado externamente) para o estilo, e JavaScript para a interação e manipulação dinâmica do conteúdo.
+
+CSS
+
+Estilização Global:*, *::before, *::after {
+    box-sizing: border-box;
+}Define box-sizing: border-box para todos os elementos e seus pseudo-elementos ::before e ::after, garantindo que o padding e a borda sejam incluídos na largura e altura dos elementos.Variáveis CSS::root {
+    --select-border: #12d792;
+    --select-focus: rgb(8, 8, 8);
+    --select-arrow: var(--select-border);
+}Define variáveis CSS (--select-border, --select-focus, --select-arrow) para facilitar a reutilização de valores de cores ao longo do estilo.Estilização do <select>:select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgb(245, 245, 245);
+    border: greenyellow;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
